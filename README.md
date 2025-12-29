@@ -5,7 +5,7 @@
 **Date:** December 29, 2025  
 **Version:** 1.0  
 **License:** Apache 2.0 
-**Repository:** https://github.com/[your-username]/[your-repo-name]  
+**Repository:** (https://github.com/BleuRadience/cdr-framework-2025)  
 **Zenodo DOI:** (to be assigned after archiving)
 
 ## Abstract
