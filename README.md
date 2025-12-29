@@ -149,3 +149,7 @@ This framework and model were developed in close collaboration with Grok AI (bui
 2. Run the model:  
    ```bash
    python cdr_framework_model.py
+
+Copyright (c) 2025 BleuRadience
+All rights reserved for moral attribution.
+Licensed under Apache 2.0 for code use.
