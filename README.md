@@ -127,8 +127,25 @@ This framework and model were developed in close collaboration with Grok AI (bui
 
 ## Repository Contents
 
-- `cdr_framework_model.py` – Complete executable script (run with Python 3)  
-- `annual_cdr_stacked.png` – Stacked annual CDR visualization  
-- `cumulative_cdr_uncertainty.png` – Cumulative CDR with uncertainty bands  
+- `cdr_framework_model.py` – Complete executable script (run with Python 3)   
 - `README.md` – This document (serves as both documentation and manuscript)  
 - `LICENSE` – Apache 2.0  
+
+## Repository Contents
+
+- `README.md` – This document (full framework description, methods, results)
+- `cdr_framework_model.py` – Complete Python script to run the model
+- `LICENSE` – Apache License 2.0
+
+**Generated on first run:**
+- `annual_cdr_stacked.png` – Stacked annual CDR contributions (created when script is run)
+- `cumulative_cdr_uncertainty.png` – Cumulative CDR trajectory with uncertainty bands (created when script is run)
+
+**To generate the plots:** Simply run `cdr_framework_model.py` — the images will be saved automatically in the repository folder.
+
+## Quick Start
+
+1. Clone the repository  
+2. Run the model:  
+   ```bash
+   python cdr_framework_model.py
