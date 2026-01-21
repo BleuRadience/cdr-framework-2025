@@ -3,7 +3,7 @@
 
 **Author:** (Cassandra D. Harrison), AvaBleu Design LLC  
 **Status:** Commercial-ready framework available for licensing  
-**Impact:** 85.6 GtCO₂ removal potential (2026-2050)
+**Impact:** 85.6 GtCO₂ removal potential (2026-2051)
 
 ### Overview
 
