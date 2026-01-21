@@ -1,7 +1,7 @@
 # Gigatonne-Scale Carbon Removal Framework
 ## Mycelium-Hemp Composites for Profitable Climate Mitigation
 
-**Author:** (Cassandra D. Harrison), BleuConsult LLC  
+**Author:** (Cassandra D. Harrison), AvaBleu Design LLC  
 **Status:** Commercial-ready framework available for licensing  
 **Impact:** 85.6 GtCO₂ removal potential (2026-2050)
 
@@ -36,7 +36,7 @@ honest cost analysis and realistic profitability pathways.
 
 ### Use Cases
 
-**For Licensing:** Contact aurora@bleuconsult.com for commercial licensing terms  
+**For Licensing:** Contact bleuisresting@gmail..com for commercial licensing terms  
 **For Policy:** `POLICY_BRIEF.txt` ready for congressional staffers  
 **For Research:** Full methodology with peer-reviewed citations  
 **For Investment:** Complete due diligence package in `/03_business_documents`
@@ -77,12 +77,12 @@ Full bibliography in `/docs/CITATIONS.md`
 
 **Framework IP:** Available for commercial licensing  
 **Code:** MIT License (open source)  
-**Contact:** aurora@bleuconsult.com for partnership inquiries
+**Contact:** bleuisresting@gmail.com for partnership inquiries
 
 ### Acknowledgments
 
 Technical implementation: Claude AI (Anthropic)  
-Original concept: Aurora (BleuConsult LLC)  
+Original concept: Aurora (AvaBleu Design LLC)  
 Grant funding prospects: USDA NIFA, NSF, DOE ARPA-E
 
 ---
