@@ -1,0 +1,36 @@
+{
+  "executive_summary": {
+    "total_cdr_potential_2050_Gt": 85.60634403873465,
+    "peak_annual_rate_Gt": 6.217440114427999,
+    "break_even_year": 2025,
+    "cumulative_profit_2050_B": 4123.42198304651,
+    "peak_annual_profit_B": 296.48181783345115,
+    "land_required_2050_Mha": 285.7142857142857
+  },
+  "policy_alignment": {
+    "annual_2030_GtCO2": 0.802948510350281,
+    "pct_paris_gap_2030": 6.691237586252343,
+    "pct_us_ndc_2030": 100.36856379378511,
+    "annual_2050_GtCO2": 6.217440114427999,
+    "cumulative_2025_2050_GtCO2": 85.60634403873465,
+    "pct_paris_gap_2050": 51.81200095356666
+  },
+  "revenue_streams": {
+    "carbon_credits": "Voluntary markets + compliance (IRA 45Q eligible)",
+    "hemp_materials": "Building materials, textiles, bioplastics",
+    "ecosystem_services": "Biodiversity credits, soil carbon, water quality"
+  },
+  "competitive_advantages": [
+    "Multi-revenue model reduces carbon price dependency",
+    "Scalable on degraded land (no food competition)",
+    "Mycelium binding creates durable carbon storage",
+    "Rapid deployment timeline (5-7 years to GtCO2 scale)",
+    "Policy-aligned with Farm Bill, IRA, EU Green Deal"
+  ],
+  "licensing_terms": {
+    "model_type": "White-label technology transfer",
+    "typical_deal": "2-5% revenue share on carbon credits + materials",
+    "geographic_exclusivity": "Available by region/country",
+    "support_included": "MRV protocols, pilot design, regulatory navigation"
+  }
+}
