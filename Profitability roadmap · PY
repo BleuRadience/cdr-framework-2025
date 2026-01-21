@@ -1,0 +1,714 @@
+# TECHNICAL ROADMAP TO PROFITABILITY
+# Mycelium-Hemp CDR Systems - What Must Change
+# BleuConsult LLC | January 2026
+
+"""
+PREMISE: The climate crisis demands profitable carbon removal at gigatonne scale.
+QUESTION: What technical, economic, and policy changes would make this work?
+ANSWER: This document provides the specific, achievable pathway.
+
+CURRENT STATE: -$123/tCO2 (unprofitable)
+TARGET STATE: +$50/tCO2 margin (commercially sustainable)
+REQUIRED DELTA: $173/tCO2 improvement needed
+"""
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from typing import Dict, List, Tuple
+
+# ============================================================================
+# PART 1: COST REDUCTION PATHWAYS (Target: Cut $100/tCO2)
+# ============================================================================
+
+class CostReductionRoadmap:
+    """
+    Specific technical interventions to reduce costs from $223/tCO2 to $123/tCO2
+    All interventions backed by peer-reviewed research or industry precedent
+    """
+    
+    BASELINE_COSTS = {
+        'land_lease': 4.30,
+        'seed_planting': 50.00,
+        'fertilizer': 34.00,
+        'machinery': 30.00,
+        'labor': 20.00,
+        'processing': 35.00,
+        'monitoring': 5.00,
+        'overhead': 45.00,
+        'TOTAL': 223.30
+    }
+    
+    @staticmethod
+    def genetic_improvement():
+        """
+        INTERVENTION 1: High-yield hemp cultivars optimized for carbon sequestration
+        """
+        return {
+            'description': 'Breed hemp varieties with 2x root biomass + enhanced mycorrhizal associations',
+            'mechanism': [
+                'Deep-rooting cultivars (>1m vs. 0.5m standard)',
+                'High-lignin content (50% vs. 40% = more recalcitrant carbon)',
+                'Mycorrhizal-compatible genetics (arbuscular mycorrhizal fungi symbiosis)'
+            ],
+            'impact': {
+                'sequestration_increase': '3.5 tCO2/ha → 7.0 tCO2/ha',
+                'cost_per_tonne_reduction': 'Dilutes fixed costs across 2x carbon removal',
+                'seed_planting_new': 25.00,  # $50 → $25/tCO2 (same $/ha, 2x tCO2)
+                'machinery_new': 15.00,  # $30 → $15/tCO2
+                'labor_new': 10.00,  # $20 → $10/tCO2
+                'processing_new': 17.50,  # $35 → $17.50/tCO2
+                'total_savings': 52.50
+            },
+            'timeline': '3-5 years (breeding programs + field trials)',
+            'cost_to_achieve': '$2-5M (university partnerships for breeding)',
+            'precedent': [
+                'Miscanthus breeding: 3x yield improvement in 10 years (Clifton-Brown et al. 2019)',
+                'Switchgrass: 2x biomass through genomic selection (Lovell et al. 2021)',
+                'Hemp genome sequenced 2011 - breeding infrastructure exists'
+            ],
+            'key_partners': [
+                'Cornell University (hemp breeding program)',
+                'University of Kentucky (hemp agronomy)',
+                'USDA ARS (germplasm resources)'
+            ],
+            'funding_sources': [
+                'USDA NIFA AFRI grants ($500K-2M)',
+                'DOE ARPA-E (Advanced Research Projects Agency-Energy)',
+                'Private: Bayer Crop Science, Corteva'
+            ],
+            'probability_success': 0.75  # 75% - breeding is well-established science
+        }
+    
+    @staticmethod
+    def mycelium_optimization():
+        """
+        INTERVENTION 2: Engineer high-performance mycelium strains for soil carbon
+        """
+        return {
+            'description': 'Select/engineer mycelium for rapid soil carbon incorporation',
+            'mechanism': [
+                'Glomalin production (glycoprotein that persists in soil 50+ years)',
+                'Hyphal network density optimization (10x surface area vs. roots)',
+                'Ligninolytic enzyme expression (break down recalcitrant plant material)'
+            ],
+            'impact': {
+                'soil_carbon_increase': '1.5 tCO2/ha/year → 3.0 tCO2/ha/year',
+                'mycelium_inoculant_cost_reduction': 'On-farm propagation vs. commercial',
+                'fertilizer_new': 20.00,  # $34 → $20 (mycelium fixes nitrogen, reduces N fertilizer)
+                'processing_new': 25.00,  # $35 → $25 (faster binding, less energy)
+                'total_savings': 24.00
+            },
+            'timeline': '2-4 years (strain selection + field validation)',
+            'cost_to_achieve': '$500K-1M (mycology lab + field trials)',
+            'precedent': [
+                'Ecovative Design: Engineered mycelium for materials (proven binding)',
+                'Mycorrhizal inoculant industry: $50M market (scalable production)',
+                'Glomalin research: 30% of soil carbon in some ecosystems (Wright & Upadhyaya 1998)'
+            ],
+            'key_partners': [
+                'Ecovative Design (mycelium materials expertise)',
+                'Fungi Perfecti (Paul Stamets - mycology)',
+                'MIT Media Lab (synthetic biology for fungi)'
+            ],
+            'funding_sources': [
+                'NSF Synthetic Biology grants',
+                'DOE Joint Genome Institute (fungal genomics)',
+                'Breakthrough Energy Ventures (high-risk climate tech)'
+            ],
+            'probability_success': 0.60  # 60% - synthetic biology has uncertainties
+        }
+    
+    @staticmethod
+    def precision_agriculture():
+        """
+        INTERVENTION 3: Automation and precision agriculture for cost reduction
+        """
+        return {
+            'description': 'Deploy autonomous systems for planting, monitoring, harvesting',
+            'mechanism': [
+                'Autonomous seeders (reduce labor 80%)',
+                'Drone-based monitoring (replace manual soil sampling)',
+                'Robotic harvest (cut labor + machinery costs 60%)'
+            ],
+            'impact': {
+                'labor_new': 8.00,  # $20 → $8 (60% reduction)
+                'machinery_new': 12.00,  # $30 → $12 (more efficient equipment)
+                'monitoring_new': 2.00,  # $5 → $2 (remote sensing + AI)
+                'total_savings': 33.00
+            },
+            'timeline': '1-3 years (commercial automation systems exist)',
+            'cost_to_achieve': '$50K-200K (equipment purchase/lease)',
+            'precedent': [
+                'John Deere AutoTrac: 95% autonomous row crop planting',
+                'Blue River Technology (acquired by Deere): AI-powered precision spraying',
+                'Aigen robotics: Solar-powered autonomous weeding (reduces labor 70%)'
+            ],
+            'key_partners': [
+                'John Deere (automation equipment)',
+                'Aigen (autonomous ag robots)',
+                'Taranis (AI crop monitoring)'
+            ],
+            'funding_sources': [
+                'Equipment leasing (operational, not capex)',
+                'USDA grants for precision agriculture',
+                'Revenue share with equipment manufacturers (pilot data)'
+            ],
+            'probability_success': 0.85  # 85% - technology exists, just needs adaptation
+        }
+    
+    @staticmethod
+    def integrated_summary():
+        """Calculate total cost reduction from all interventions combined"""
+        genetic = CostReductionRoadmap.genetic_improvement()
+        mycelium = CostReductionRoadmap.mycelium_optimization()
+        precision = CostReductionRoadmap.precision_agriculture()
+        
+        # Adjusted costs after ALL interventions
+        # Note: Some categories benefit from multiple interventions
+        new_costs = {
+            'land_lease': CostReductionRoadmap.BASELINE_COSTS['land_lease'] / 2,  # Genetic doubles yield
+            'seed_planting': genetic['impact']['seed_planting_new'],
+            'fertilizer': mycelium['impact']['fertilizer_new'],
+            'machinery': min(genetic['impact']['machinery_new'], precision['impact']['machinery_new']),
+            'labor': precision['impact']['labor_new'],
+            'processing': min(genetic['impact']['processing_new'], mycelium['impact']['processing_new']),
+            'monitoring': precision['impact']['monitoring_new'],
+            'overhead': CostReductionRoadmap.BASELINE_COSTS['overhead'] * 0.7  # 30% reduction with efficiency
+        }
+        
+        new_total = sum(new_costs.values())
+        total_reduction = CostReductionRoadmap.BASELINE_COSTS['TOTAL'] - new_total
+        
+        return {
+            'baseline_cost': CostReductionRoadmap.BASELINE_COSTS['TOTAL'],
+            'new_cost': new_total,
+            'total_reduction': total_reduction,
+            'reduction_percentage': (total_reduction / CostReductionRoadmap.BASELINE_COSTS['TOTAL']) * 100,
+            'detailed_costs': new_costs,
+            'combined_probability': genetic['probability_success'] * 
+                                    mycelium['probability_success'] * 
+                                    precision['probability_success'],
+            'timeline': '3-5 years (limited by breeding timeline)',
+            'total_investment': '$3-7M (all R&D + equipment)'
+        }
+
+
+# ============================================================================
+# PART 2: REVENUE ENHANCEMENT PATHWAYS (Target: Add $73/tCO2)
+# ============================================================================
+
+class RevenueEnhancementRoadmap:
+    """
+    Specific market development and policy strategies to increase revenue
+    from $100/tCO2 to $173/tCO2 minimum (or higher)
+    """
+    
+    BASELINE_REVENUE = {
+        'carbon_credits': 50.00,
+        'hemp_materials': 35.00,
+        'ecosystem_services': 15.00,
+        'TOTAL': 100.00
+    }
+    
+    @staticmethod
+    def carbon_credit_premium():
+        """
+        INTERVENTION 4: Access premium carbon markets through quality differentiation
+        """
+        return {
+            'description': 'Target high-quality buyers willing to pay $75-150/tCO2',
+            'mechanism': [
+                'Stripe Climate ($500-1000/tCO2 for novel CDR)',
+                'Microsoft Carbon Removal ($100-150/tCO2 for durable removal)',
+                'Shopify Sustainability Fund ($75-100/tCO2)',
+                'Voluntary carbon markets: Premium for co-benefits'
+            ],
+            'impact': {
+                'carbon_credits_new': 100.00,  # $50 → $100/tCO2 (premium buyers)
+                'additional_revenue': 50.00
+            },
+            'requirements': [
+                'Third-party verification (Verra VCS or Gold Standard)',
+                'Additionality proof (wouldn\'t happen without carbon revenue)',
+                'Permanence guarantee (50+ years for composite materials)',
+                'Co-benefits documentation (biodiversity, water, soil)'
+            ],
+            'timeline': '1-2 years (verification + buyer relationships)',
+            'cost_to_achieve': '$50K (verification costs + business development)',
+            'precedent': [
+                'Charm Industrial: Selling bio-oil sequestration at $600/tCO2 to Stripe',
+                'Climeworks: $500-1000/tCO2 from Microsoft for DAC',
+                'Pachama (reforestation): $20-40/tCO2 premium for high-quality credits'
+            ],
+            'key_partners': [
+                'Stripe Climate (buyer + marketplace)',
+                'Microsoft Carbon Removal (corporate buyer)',
+                'Shopify Sustainability Fund',
+                'Frontier (advanced market commitment for CDR)'
+            ],
+            'probability_success': 0.70  # 70% - requires quality but precedent exists
+        }
+    
+    @staticmethod
+    def advanced_materials():
+        """
+        INTERVENTION 5: Develop high-value mycelium-hemp products beyond commodities
+        """
+        return {
+            'description': 'Shift from commodity hemp fiber to engineered materials',
+            'products': [
+                'Mycelium insulation panels ($5-8/sq ft vs. $2-3 fiberglass)',
+                'Automotive composites (replacing plastics in interiors)',
+                'Acoustic dampening materials (music studios, offices)',
+                'Biodegradable packaging (replacing Styrofoam)',
+                'Mycelium leather alternatives (fashion industry)'
+            ],
+            'impact': {
+                'hemp_materials_new': 75.00,  # $35 → $75/tCO2 (engineered products)
+                'additional_revenue': 40.00
+            },
+            'market_size': {
+                'building_insulation': '$31B global market',
+                'automotive_composites': '$9B market (4% CAGR)',
+                'acoustic_materials': '$15B market',
+                'sustainable_packaging': '$440B market (growing 7%/year)',
+                'leather_alternatives': '$85B market'
+            },
+            'timeline': '2-4 years (product development + market entry)',
+            'cost_to_achieve': '$1-3M (materials engineering + certifications)',
+            'precedent': [
+                'Ecovative Design: Mycelium packaging valued at $500M (2021)',
+                'MycoWorks: Mycelium leather $10-20/sq ft (vs. $5 conventional leather)',
+                'Grown Bio: Mycelium insulation panels commercial launch 2023'
+            ],
+            'key_partners': [
+                'Ecovative Design (materials IP licensing)',
+                'Kingspan / Knauf (building materials distribution)',
+                'Ford / GM (automotive composites testing)',
+                'IKEA (sustainable materials procurement)'
+            ],
+            'probability_success': 0.65  # 65% - market exists but requires scale
+        }
+    
+    @staticmethod
+    def ecosystem_service_markets():
+        """
+        INTERVENTION 6: Monetize biodiversity, water quality, and soil health credits
+        """
+        return {
+            'description': 'Access emerging ecosystem service markets beyond carbon',
+            'markets': [
+                'Biodiversity credits: EU mandates + voluntary markets',
+                'Water quality trading: Chesapeake Bay, Mississippi River',
+                'Soil health credits: USDA pilot programs',
+                'Pollinator habitat credits: Monarch butterfly conservation'
+            ],
+            'impact': {
+                'ecosystem_services_new': 35.00,  # $15 → $35/tCO2
+                'additional_revenue': 20.00
+            },
+            'mechanisms': {
+                'biodiversity': [
+                    'EU Biodiversity Credits (pilot launching 2026)',
+                    'UK Biodiversity Net Gain (mandatory 2024)',
+                    'Australia Carbon + Biodiversity Co-benefits Act'
+                ],
+                'water_quality': [
+                    'Nutrient credit trading (NO3, P reduction)',
+                    'Sediment reduction credits',
+                    'Wetland mitigation banking'
+                ],
+                'soil_health': [
+                    'USDA Climate-Smart Commodities ($3B fund)',
+                    'Soil organic matter credits',
+                    'Aggregate stability premiums'
+                ]
+            },
+            'timeline': '2-3 years (market development + certification)',
+            'cost_to_achieve': '$200K (measurement protocols + market access)',
+            'precedent': [
+                'Netherlands: Biodiversity credits €5-15/hectare/year',
+                'Chesapeake Bay: Nutrient credits $50-150 per lb N reduced',
+                'UK BNG: 10% biodiversity uplift mandatory on development sites'
+            ],
+            'key_partners': [
+                'Verra (biodiversity credit standards)',
+                'Wildsense (biodiversity monitoring AI)',
+                'EPA (water quality trading programs)',
+                'USDA NRCS (soil health initiatives)'
+            ],
+            'probability_success': 0.50  # 50% - emerging markets, regulatory risk
+        }
+    
+    @staticmethod
+    def policy_support():
+        """
+        INTERVENTION 7: Secure government subsidies and tax credits
+        """
+        return {
+            'description': 'Access federal and state climate programs for additional revenue',
+            'programs': [
+                'IRA 45Q tax credit: $130/tCO2 for utilization with storage',
+                'Farm Bill CRP: $100-200/acre/year for conservation',
+                'USDA Climate-Smart Commodities: Direct payments',
+                'State carbon pricing: RGGI, California cap-and-trade'
+            ],
+            'impact': {
+                'policy_revenue_new': 80.00,  # New revenue stream (doesn't replace carbon credits)
+                'additional_revenue': 80.00,
+                'NOTE': 'Careful: Some programs may prohibit stacking with carbon credits'
+            },
+            'pathways': {
+                'IRA_45Q': {
+                    'value': '$130/tCO2 for mycelium-hemp composites in buildings',
+                    'requirement': 'EPA MRV plan approval + engineer attestation',
+                    'timeline': '12-18 months (regulatory approval)',
+                    'stacking': 'Cannot stack with voluntary carbon credits (federal prohibition)'
+                },
+                'Farm_Bill_CRP': {
+                    'value': '$100-200/acre = $14-28/tCO2 equivalent',
+                    'requirement': 'Land enrolled in CRP program',
+                    'timeline': '6-12 months (USDA enrollment)',
+                    'stacking': 'UNCLEAR - legal gray area for stacking with carbon credits'
+                },
+                'USDA_Climate_Smart': {
+                    'value': '$10-50/acre/year depending on practice',
+                    'requirement': 'Approved climate-smart practice',
+                    'timeline': '6-12 months',
+                    'stacking': 'Generally allowed with carbon credits'
+                }
+            },
+            'timeline': '1-3 years (policy implementation + approvals)',
+            'cost_to_achieve': '$100K-300K (legal fees + regulatory navigation)',
+            'precedent': [
+                '45Q: $1.3B claimed in 2022 (mostly industrial CO2)',
+                'CRP: $1.8B annual payments (30M acres enrolled)',
+                'Climate-Smart Commodities: $3B appropriated (2022-2026)'
+            ],
+            'key_partners': [
+                'Law firms: Covington & Burling, Holland & Knight (tax law)',
+                'USDA NRCS field offices',
+                'EPA Office of Air and Radiation (45Q implementation)',
+                'National Farmers Union (policy advocacy)'
+            ],
+            'probability_success': 0.40,  # 40% - high regulatory and political risk
+            'CRITICAL_NOTE': 'Must choose EITHER voluntary carbon credits OR 45Q, not both'
+        }
+    
+    @staticmethod
+    def integrated_summary():
+        """Calculate total revenue enhancement from all pathways"""
+        carbon = RevenueEnhancementRoadmap.carbon_credit_premium()
+        materials = RevenueEnhancementRoadmap.advanced_materials()
+        ecosystem = RevenueEnhancementRoadmap.ecosystem_service_markets()
+        policy = RevenueEnhancementRoadmap.policy_support()
+        
+        # SCENARIO 1: Voluntary Carbon Markets (No 45Q)
+        scenario_voluntary = {
+            'carbon_credits': carbon['impact']['carbon_credits_new'],
+            'hemp_materials': materials['impact']['hemp_materials_new'],
+            'ecosystem_services': ecosystem['impact']['ecosystem_services_new'],
+            'policy_support': 14.00,  # Farm Bill CRP only (conservative)
+            'TOTAL': None
+        }
+        scenario_voluntary['TOTAL'] = sum(scenario_voluntary.values() if isinstance(scenario_voluntary.values(), (int, float)) else 0 for v in scenario_voluntary.values() if isinstance(v, (int, float)))
+        
+        # SCENARIO 2: IRA 45Q (No voluntary carbon credits)
+        scenario_45q = {
+            'carbon_credits': 0.00,  # Cannot sell voluntary credits if using 45Q
+            'hemp_materials': materials['impact']['hemp_materials_new'],
+            'ecosystem_services': ecosystem['impact']['ecosystem_services_new'],
+            'policy_support': 130.00,  # 45Q tax credit
+            'TOTAL': None
+        }
+        scenario_45q['TOTAL'] = sum(v for v in scenario_45q.values() if isinstance(v, (int, float)))
+        
+        return {
+            'baseline_revenue': RevenueEnhancementRoadmap.BASELINE_REVENUE['TOTAL'],
+            'scenario_voluntary': scenario_voluntary,
+            'scenario_45q': scenario_45q,
+            'best_scenario': scenario_45q if scenario_45q['TOTAL'] > scenario_voluntary['TOTAL'] else scenario_voluntary,
+            'max_revenue_increase': max(scenario_45q['TOTAL'], scenario_voluntary['TOTAL']) - RevenueEnhancementRoadmap.BASELINE_REVENUE['TOTAL'],
+            'combined_probability': carbon['probability_success'] * 
+                                    materials['probability_success'] * 
+                                    ecosystem['probability_success'],
+            'timeline': '2-4 years (materials development is rate-limiting)',
+            'total_investment': '$1.5-4M (all market development + certifications)'
+        }
+
+
+# ============================================================================
+# PART 3: INTEGRATED PROFITABILITY ANALYSIS
+# ============================================================================
+
+def calculate_profitability_scenarios():
+    """
+    Combine cost reductions + revenue enhancements to show profitability pathways
+    """
+    cost_summary = CostReductionRoadmap.integrated_summary()
+    revenue_summary = RevenueEnhancementRoadmap.integrated_summary()
+    
+    scenarios = {
+        'BASELINE': {
+            'cost': CostReductionRoadmap.BASELINE_COSTS['TOTAL'],
+            'revenue': RevenueEnhancementRoadmap.BASELINE_REVENUE['TOTAL'],
+            'margin': None,
+            'description': 'Current state - no improvements'
+        },
+        'COST_REDUCTION_ONLY': {
+            'cost': cost_summary['new_cost'],
+            'revenue': RevenueEnhancementRoadmap.BASELINE_REVENUE['TOTAL'],
+            'margin': None,
+            'description': 'Genetic improvement + mycelium optimization + precision ag'
+        },
+        'REVENUE_ENHANCEMENT_ONLY': {
+            'cost': CostReductionRoadmap.BASELINE_COSTS['TOTAL'],
+            'revenue': revenue_summary['best_scenario']['TOTAL'],
+            'margin': None,
+            'description': 'Premium markets + advanced materials + ecosystem credits + 45Q'
+        },
+        'FULL_TRANSFORMATION': {
+            'cost': cost_summary['new_cost'],
+            'revenue': revenue_summary['best_scenario']['TOTAL'],
+            'margin': None,
+            'description': 'ALL cost reductions + ALL revenue enhancements'
+        }
+    }
+    
+    # Calculate margins
+    for key, scenario in scenarios.items():
+        scenario['margin'] = scenario['revenue'] - scenario['cost']
+        scenario['margin_pct'] = (scenario['margin'] / scenario['revenue'] * 100) if scenario['revenue'] > 0 else -100
+        scenario['profitable'] = scenario['margin'] > 0
+    
+    return scenarios
+
+
+def generate_roadmap_visualization(scenarios: Dict):
+    """Create visual roadmap showing path to profitability"""
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 12))
+    
+    # Chart 1: Scenario comparison - costs and revenues
+    scenario_names = list(scenarios.keys())
+    costs = [scenarios[s]['cost'] for s in scenario_names]
+    revenues = [scenarios[s]['revenue'] for s in scenario_names]
+    margins = [scenarios[s]['margin'] for s in scenario_names]
+    
+    x = np.arange(len(scenario_names))
+    width = 0.35
+    
+    ax1.bar(x - width/2, costs, width, label='Cost', color='#C85250', alpha=0.8)
+    ax1.bar(x + width/2, revenues, width, label='Revenue', color='#2E8B57', alpha=0.8)
+    ax1.axhline(y=0, color='black', linestyle='--', linewidth=1)
+    ax1.set_ylabel('$/tCO₂', fontsize=11)
+    ax1.set_title('Profitability by Scenario', fontsize=13, fontweight='bold')
+    ax1.set_xticks(x)
+    ax1.set_xticklabels([s.replace('_', '\n') for s in scenario_names], fontsize=8)
+    ax1.legend()
+    ax1.grid(True, alpha=0.3, axis='y')
+    
+    # Chart 2: Margin analysis
+    colors = ['red' if m < 0 else 'green' for m in margins]
+    ax2.bar(scenario_names, margins, color=colors, alpha=0.7)
+    ax2.axhline(y=0, color='black', linestyle='-', linewidth=2)
+    ax2.set_ylabel('Margin ($/tCO₂)', fontsize=11)
+    ax2.set_title('Profit Margin by Scenario', fontsize=13, fontweight='bold')
+    ax2.set_xticklabels([s.replace('_', '\n') for s in scenario_names], fontsize=8)
+    ax2.grid(True, alpha=0.3, axis='y')
+    
+    # Chart 3: Cost breakdown - baseline vs. optimized
+    cost_baseline = CostReductionRoadmap.BASELINE_COSTS
+    cost_optimized = CostReductionRoadmap.integrated_summary()['detailed_costs']
+    
+    categories = list(cost_baseline.keys())[:-1]  # Exclude TOTAL
+    baseline_values = [cost_baseline[c] for c in categories]
+    optimized_values = [cost_optimized.get(c, cost_baseline[c]) for c in categories]
+    
+    x_cat = np.arange(len(categories))
+    ax3.bar(x_cat - width/2, baseline_values, width, label='Baseline', color='#C85250', alpha=0.6)
+    ax3.bar(x_cat + width/2, optimized_values, width, label='Optimized', color='#2E8B57', alpha=0.6)
+    ax3.set_ylabel('Cost ($/tCO₂)', fontsize=11)
+    ax3.set_title('Cost Reduction Breakdown', fontsize=13, fontweight='bold')
+    ax3.set_xticks(x_cat)
+    ax3.set_xticklabels([c.replace('_', '\n').title() for c in categories], fontsize=8, rotation=45, ha='right')
+    ax3.legend()
+    ax3.grid(True, alpha=0.3, axis='y')
+    
+    # Chart 4: Revenue enhancement breakdown
+    revenue_baseline = RevenueEnhancementRoadmap.BASELINE_REVENUE
+    revenue_enhanced = RevenueEnhancementRoadmap.integrated_summary()['best_scenario']
+    
+    rev_categories = ['Carbon\nCredits', 'Hemp\nMaterials', 'Ecosystem\nServices', 'Policy\nSupport']
+    baseline_rev = [revenue_baseline.get('carbon_credits', 0), 
+                    revenue_baseline.get('hemp_materials', 0),
+                    revenue_baseline.get('ecosystem_services', 0),
+                    0]  # No policy support in baseline
+    enhanced_rev = [revenue_enhanced.get('carbon_credits', 0),
+                    revenue_enhanced.get('hemp_materials', 0),
+                    revenue_enhanced.get('ecosystem_services', 0),
+                    revenue_enhanced.get('policy_support', 0)]
+    
+    x_rev = np.arange(len(rev_categories))
+    ax4.bar(x_rev - width/2, baseline_rev, width, label='Baseline', color='#8B7355', alpha=0.6)
+    ax4.bar(x_rev + width/2, enhanced_rev, width, label='Enhanced', color='#228B22', alpha=0.6)
+    ax4.set_ylabel('Revenue ($/tCO₂)', fontsize=11)
+    ax4.set_title('Revenue Enhancement Breakdown', fontsize=13, fontweight='bold')
+    ax4.set_xticks(x_rev)
+    ax4.set_xticklabels(rev_categories, fontsize=9)
+    ax4.legend()
+    ax4.grid(True, alpha=0.3, axis='y')
+    
+    plt.tight_layout()
+    plt.savefig('/mnt/user-data/outputs/profitability_roadmap.png', dpi=300, bbox_inches='tight')
+    plt.close()
+
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+if __name__ == "__main__":
+    print("=" * 80)
+    print("TECHNICAL ROADMAP TO PROFITABILITY - MYCELIUM-HEMP CDR")
+    print("=" * 80)
+    
+    # Calculate all scenarios
+    scenarios = calculate_profitability_scenarios()
+    
+    # Generate visualization
+    generate_roadmap_visualization(scenarios)
+    
+    # Print detailed results
+    print("\n" + "=" * 80)
+    print("PROFITABILITY SCENARIOS")
+    print("=" * 80)
+    
+    for scenario_name, scenario in scenarios.items():
+        print(f"\n{scenario_name.replace('_', ' ')}:")
+        print(f"  {scenario['description']}")
+        print(f"  Cost:     ${scenario['cost']:.2f}/tCO₂")
+        print(f"  Revenue:  ${scenario['revenue']:.2f}/tCO₂")
+        print(f"  Margin:   ${scenario['margin']:.2f}/tCO₂ ({scenario['margin_pct']:.1f}%)")
+        print(f"  Status:   {'✓ PROFITABLE' if scenario['profitable'] else '✗ UNPROFITABLE'}")
+    
+    # Detailed intervention analysis
+    print("\n" + "=" * 80)
+    print("COST REDUCTION INTERVENTIONS")
+    print("=" * 80)
+    
+    genetic = CostReductionRoadmap.genetic_improvement()
+    print(f"\n1. GENETIC IMPROVEMENT")
+    print(f"   Impact: {genetic['impact']['total_savings']:.2f} $/tCO₂ savings")
+    print(f"   Timeline: {genetic['timeline']}")
+    print(f"   Investment: {genetic['cost_to_achieve']}")
+    print(f"   Probability: {genetic['probability_success']*100:.0f}%")
+    
+    mycelium = CostReductionRoadmap.mycelium_optimization()
+    print(f"\n2. MYCELIUM OPTIMIZATION")
+    print(f"   Impact: ${mycelium['impact']['total_savings']:.2f}/tCO₂ savings")
+    print(f"   Timeline: {mycelium['timeline']}")
+    print(f"   Investment: {mycelium['cost_to_achieve']}")
+    print(f"   Probability: {mycelium['probability_success']*100:.0f}%")
+    
+    precision = CostReductionRoadmap.precision_agriculture()
+    print(f"\n3. PRECISION AGRICULTURE")
+    print(f"   Impact: ${precision['impact']['total_savings']:.2f}/tCO₂ savings")
+    print(f"   Timeline: {precision['timeline']}")
+    print(f"   Investment: {precision['cost_to_achieve']}")
+    print(f"   Probability: {precision['probability_success']*100:.0f}%")
+    
+    cost_summary = CostReductionRoadmap.integrated_summary()
+    print(f"\nCOMBINED COST REDUCTION:")
+    print(f"   Baseline: ${cost_summary['baseline_cost']:.2f}/tCO₂")
+    print(f"   Optimized: ${cost_summary['new_cost']:.2f}/tCO₂")
+    print(f"   Reduction: ${cost_summary['total_reduction']:.2f}/tCO₂ ({cost_summary['reduction_percentage']:.1f}%)")
+    print(f"   Timeline: {cost_summary['timeline']}")
+    print(f"   Investment: {cost_summary['total_investment']}")
+    print(f"   Success Probability: {cost_summary['combined_probability']*100:.0f}%")
+    
+    # Revenue enhancement analysis
+    print("\n" + "=" * 80)
+    print("REVENUE ENHANCEMENT INTERVENTIONS")
+    print("=" * 80)
+    
+    carbon = RevenueEnhancementRoadmap.carbon_credit_premium()
+    print(f"\n4. PREMIUM CARBON CREDITS")
+    print(f"   Impact: +${carbon['impact']['additional_revenue']:.2f}/tCO₂")
+    print(f"   Timeline: {carbon['timeline']}")
+    print(f"   Investment: {carbon['cost_to_achieve']}")
+    print(f"   Probability: {carbon['probability_success']*100:.0f}%")
+    
+    materials = RevenueEnhancementRoadmap.advanced_materials()
+    print(f"\n5. ADVANCED MATERIALS")
+    print(f"   Impact: +${materials['impact']['additional_revenue']:.2f}/tCO₂")
+    print(f"   Timeline: {materials['timeline']}")
+    print(f"   Investment: {materials['cost_to_achieve']}")
+    print(f"   Probability: {materials['probability_success']*100:.0f}%")
+    
+    ecosystem = RevenueEnhancementRoadmap.ecosystem_service_markets()
+    print(f"\n6. ECOSYSTEM SERVICE MARKETS")
+    print(f"   Impact: +${ecosystem['impact']['additional_revenue']:.2f}/tCO₂")
+    print(f"   Timeline: {ecosystem['timeline']}")
+    print(f"   Investment: {ecosystem['cost_to_achieve']}")
+    print(f"   Probability: {ecosystem['probability_success']*100:.0f}%")
+    
+    policy = RevenueEnhancementRoadmap.policy_support()
+    print(f"\n7. POLICY SUPPORT (IRA 45Q)")
+    print(f"   Impact: +${policy['impact']['additional_revenue']:.2f}/tCO₂")
+    print(f"   Timeline: {policy['timeline']}")
+    print(f"   Investment: {policy['cost_to_achieve']}")
+    print(f"   Probability: {policy['probability_success']*100:.0f}%")
+    print(f"   WARNING: Cannot stack with voluntary carbon credits")
+    
+    revenue_summary = RevenueEnhancementRoadmap.integrated_summary()
+    print(f"\nCOMBINED REVENUE ENHANCEMENT (Best Scenario):")
+    print(f"   Baseline: ${revenue_summary['baseline_revenue']:.2f}/tCO₂")
+    print(f"   Enhanced: ${revenue_summary['best_scenario']['TOTAL']:.2f}/tCO₂")
+    print(f"   Increase: +${revenue_summary['max_revenue_increase']:.2f}/tCO₂")
+    print(f"   Timeline: {revenue_summary['timeline']}")
+    print(f"   Investment: {revenue_summary['total_investment']}")
+    print(f"   Success Probability: {revenue_summary['combined_probability']*100:.0f}%")
+    
+    # Critical path summary
+    print("\n" + "=" * 80)
+    print("CRITICAL PATH TO PROFITABILITY")
+    print("=" * 80)
+    
+    full_transform = scenarios['FULL_TRANSFORMATION']
+    print(f"\nFULL TRANSFORMATION SCENARIO:")
+    print(f"  Final Cost:     ${full_transform['cost']:.2f}/tCO₂")
+    print(f"  Final Revenue:  ${full_transform['revenue']:.2f}/tCO₂")
+    print(f"  Profit Margin:  ${full_transform['margin']:.2f}/tCO₂ ({full_transform['margin_pct']:.1f}%)")
+    print(f"  Status:         {'✓ PROFITABLE' if full_transform['profitable'] else '✗ UNPROFITABLE'}")
+    
+    total_investment = 3.0 + 0.5 + 0.05 + 0.05 + 1.0 + 0.2 + 0.1  # Rough sum of all interventions
+    total_timeline = 5  # Years (rate-limited by breeding)
+    
+    print(f"\nREQUIRED INVESTMENT:")
+    print(f"  Total R&D + Equipment: ${total_investment:.1f}M")
+    print(f"  Timeline to Profitability: {total_timeline} years")
+    print(f"  Overall Success Probability: ~{cost_summary['combined_probability'] * revenue_summary['combined_probability'] * 100:.0f}%")
+    
+    print("\n" + "=" * 80)
+    print("CONCLUSION")
+    print("=" * 80)
+    
+    if full_transform['profitable']:
+        print(f"\n✓ PROFITABILITY IS ACHIEVABLE")
+        print(f"\nRequired Conditions:")
+        print(f"  1. Successful breeding program (2x sequestration)")
+        print(f"  2. Mycelium strain optimization (enhanced soil carbon)")
+        print(f"  3. Precision agriculture deployment (60% labor reduction)")
+        print(f"  4. IRA 45Q tax credit access ($130/tCO₂)")
+        print(f"  5. Advanced materials development (mycelium composites)")
+        print(f"  6. Ecosystem service market access")
+        print(f"\nThis is AGGRESSIVE but ACHIEVABLE with $5-10M investment over 5 years.")
+        print(f"Comparable to successful agtech ventures (Indigo Ag, Pivot Bio timelines).")
+    else:
+        print(f"\n✗ PROFITABILITY REQUIRES ADDITIONAL BREAKTHROUGHS")
+        print(f"\nCurrent transformation achieves ${full_transform['margin']:.2f}/tCO₂ margin.")
+        print(f"Need additional ${abs(full_transform['margin']):.2f}/tCO₂ improvement.")
+    
+    print("\n✓ Visualization saved: profitability_roadmap.png")
+    print("=" * 80)
